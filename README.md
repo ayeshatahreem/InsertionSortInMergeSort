@@ -1,2 +1,4 @@
 # InsertionSortInMergeSort
-Insertion Sort on small array instead in Merge Sort
+Although merge sort runs in O (n lg n) worst-case time and insertion sort runs in O(n2) worst-case time, the constant factors in insertion sort can make it faster in practice for small problem sizes on many machines. Thus, it makes sense to coarsen the leaves of the recursion by using insertion sort within merge sort when sub problems become sufficiently small. Consider a modification to merge sort in which n=k sub lists of length k are sorted using insertion sort and then merged using the standard merging mechanism, where k is a value to be determined.  
+ 
+Implement this modified version of merge sort and report the optimal value of k such that when input size is smaller than or equal to k then it is more efficient to use insertion sort for sorting smaller sub lists. 
